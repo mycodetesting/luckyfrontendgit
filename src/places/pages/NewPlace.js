@@ -37,7 +37,6 @@ const NewPlace = () => {
       await sendRequest(`${process.env.REACT_APP_BACKEND_URL}/places`, "POST", formData, {
         Authorization: "Bearer " + auth.token,
       });
-      history.push("/");
     } catch (err) {}
   };
 
